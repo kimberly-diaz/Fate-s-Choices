@@ -1,0 +1,256 @@
+﻿/*****************
+    **COLOR SCHEME
+******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Poppins&family=Special+Elite&display=swap');
+
+/*Global Styles
+*********************************/
+body {
+    background-color: black;
+    color: #E6E6E6;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    background-color: #E6E6E6;
+}
+
+/*Navigation
+*********************************/
+.navigation {
+    text-align: right;
+}
+nav ul {
+    display: inline-flex;
+    margin: 0;  
+    padding: 30px 40px;
+}
+nav li {
+    list-style-type: none;
+    margin: 0 5px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 75px;
+    padding: 3px;
+}
+    nav a:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 1px 1px 5px white;
+        border-radius: 3px;
+        padding: 4px 3px;
+        transition: ease-in 0.3s;
+    }
+
+/*Home
+*********************************/
+.home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    .home h1 {
+        margin: 0;
+        font-size: 100px;
+        font-family: 'Special Elite', cursive;
+        text-align: center;
+        padding: 80px 100px;
+        background: url('../images/finger.gif') no-repeat bottom;
+        background-size: 250px;
+    }
+    .home p {
+        margin: 60px 0;
+        text-align: center;
+        padding: 100px 60px;
+        border-left: solid 0.7px;
+    }
+    
+/*The Story
+*********************************/
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+    .story h1 {
+        margin-top: 150px;
+        font-size: 100px;
+        font-family: 'Special Elite', cursive;
+        text-align: center;
+        padding: 30px 100px;
+    }
+    .story p {
+        margin: 50px 0;
+        text-align: center;
+        padding: 50px 50px;
+        border-left: solid 0.7px;
+    }
+
+/*Start Button
+*********************************/
+.start {
+    margin-top: 50px;
+    text-align: center;
+}
+    .start a {
+        color: white;
+        padding: 15px 200px 60px;
+        text-decoration-line: none;
+        border-radius: 20px;
+    }
+    .start a:hover {
+        color: black;
+        transition: 0.7s ease-in;
+        background-color: white;
+    }
+    .start p {
+        padding-bottom: 90px;
+        color: black;
+    }
+
+/*Back Button
+*********************************/
+.back {
+    border: none;
+    float: left;
+    margin: 40px 20px;
+    border-radius: 100px;
+}
+    .back:hover {
+        box-shadow: 0px 0px 10px;
+        transition: ease-in 0.1s;
+    }
+
+/*Header
+*********************************/
+header {
+    display: block;
+    max-height: 160px;
+    max-width: 1263.33px;
+}
+    header h1 {
+        margin: 0 200px;
+        font-size: 40px;
+        padding: 45px 0;
+        text-align: center;
+        letter-spacing: 3px;
+        border-bottom: dotted;
+    }
+
+/*Pause and play buttons
+*********************************/
+.pause {
+    background: url('../images/pause.png') no-repeat center;
+    border: none;
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    float: right;
+    margin: 45px 0 60px 0px;
+}
+.play {
+    background: url('../images/play.png') no-repeat center;
+    border: none;
+    border-radius: 50px;
+    height: 55px;
+    width: 55px;
+    float: right;
+    margin: 45px 20px 60px 10px;
+}
+    .pause:hover, .play:hover {
+        transition: ease-in 0.1s;
+        background-color: rgb(255,255,255,55%);
+    }
+
+
+/*Body
+*********************************/
+.white-wrap {
+    display: inline-block;
+    margin: 0;
+    background-color: #E6E6E6;
+    transition: ease-in 0.7s;
+    color: #333333;
+}
+.black-wrap {
+    display: inline-block;
+    margin: 0;
+    background-color: #333333;
+    transition: ease-in 0.7s;
+    color: #E6E6E6;
+}
+.content-text {
+    margin: 20px 200px 0;
+    font-size: 20px;
+    text-align: justify;
+}
+    .content-text p {
+        margin: 60px 0;
+    }
+/*Image floating left*/
+.image-left {
+    position: relative;
+    float: left;
+    border: black solid;
+    margin: 30px 20px;
+}
+/*Image floating right*/
+.image-right {
+    position: relative;
+    float: right;
+    border: black solid;
+    margin: 30px 20px;
+}
+.image-animals {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-top: dashed;
+    border-bottom: dashed;
+    border-color: #333333;
+}
+.end-wrap {
+    margin: 0 180px;
+}
+.ending {
+    border-top: dotted;
+    text-align: center;
+    padding: 20px 0 0;
+}
+
+/*Footer
+*********************************/
+footer {
+    margin: 40px 0 80px;
+}
+    footer button {
+        font-family: 'Amatic SC', cursive;
+        border: #333333 solid 2px;
+        font-size: 40px;
+        color: #333333;
+        padding: 10px 30px;
+    }
+        footer button:hover {
+            background-color: #333333;
+            color: #E6E6E6;
+            box-shadow: 0px 0px 10px #1F1F1F;
+            transition: ease-in .2s;
+        }
+.first-choice {
+    width: 49%;
+}
+.second-choice {
+    width: 49%;
+    float: right;
+}
+.end-choice {
+    width: 100%;
+}
+
+@media only screen and (min-width : 1440px) {
+    body {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+}
